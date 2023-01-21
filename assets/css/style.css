@@ -1,6 +1,55 @@
+/* verde elementos #128b16 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/* ////////////// ELEMENTOS CRIADOS PELO JS //////////////////////// */
+
+#popUp{
+    margin-top: 20vh;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: #b3b3b3;
+    border-radius: 2vh;
+    border: solid 1vh rgb(182, 3, 3);
+}
+
+#divBtnClose{
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    
+}
+
+#divTextSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    
+}
+
+#textSpan{
+    width: 15vw;
+    height: 10vh;
+    text-align: center;
+}
+
+#btnClose{
+    border-radius: 1vh;
+    width: 3vw;
+    height: 5vh;
+}
+
+
+/* /////////////////////// Corpo geral da pagina ///////////////////////// */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
 }
 
 .displayFlex{
@@ -16,12 +65,139 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
+    background-color: #272727;
 }
 
 .container{
+    align-items: center;
     border-radius: 2vh;
     width: 90vw;
     height: 90vh;
-    background-color: #686868;
+    background-color: #000;
+}
+/* /////////////////////// Topo da Pagina ////////////////////////////  */
+
+#opcoesTopo{
+   align-items: flex-end;
+   padding-bottom: 2vh;
+   height: 12vh;
+   width: 45vw;
+   justify-content: space-between;
+}
+
+#divSelect{
+    justify-content: end;
+    height: 10vh;
+    
+}
+
+.divTextoTopo{
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5vh;
+    color: #128b16;
+}
+
+.textoDescritivo{
+    width: 80vw;
+    height: 13vh;
+    text-align: center;
+    font-size: 2.5vh;
+    color: #128b16;
+}
+/* ////////////////////////////// Conteudo Principal //////////////////////////*/
+form{
+    
+    width: 45vw;
+    height: 68vh;
+    align-items: center;
+}
+
+#incremento{
+    display: none;
+    color: #128b16;
+   
+}
+
+#incremento input{
+    background-color: #494949;
+    border-radius: 1vh;
+    color: #92b493;
+    font-size: 2.5vh;
+}
+
+
+
+#selectTipoCript{
+    cursor: pointer;
+    border-radius: 1vh;
+    width: 12vw;
+    height: 5vh;
+    margin-bottom: 1vh;
+    background-color: #494949;
+    color: #92b493;
+    font-size: 2.5vh;
+}
+
+#textoInicial{
+    margin-top: auto;
+    width: 45vw;
+    height: 25vh;
+    resize: none;
+    border-radius: 2vh;
+    background-color: #494949;
+    color: #92b493;
+    font-size: 3vh;
+}
+
+#labelTextoInicial, #labelTextoFinal{
+    color: #128b16;
+}
+
+#textoFinal{
+    width: 45vw;
+    height: 25vh;
+    border-radius: 2vh;
+    background-color: white;
+    margin-top: auto;
+    background-color: #494949;
+    color: #92b493;
+    padding: 5px;
+    font-size: 3vh;
+    resize: none;
+}
+
+.acoes{
+    justify-content: end;
+    align-items: center;
+    width: 40vw;
+    height: 8vh;
+}
+
+.opcoesProcess{
+    width: 20vw;
+    justify-content: space-around;
+    color: #128b16;
+}
+
+.opcao{
+    width: 20vw;
+    height: 5vh;
+    font-size: 3vh;
+}
+
+#button{
+    cursor: pointer;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: #224129;
+    color: #92b493;
+    font-size: 2.5vh;
 }

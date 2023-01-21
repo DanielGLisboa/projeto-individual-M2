@@ -6,15 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Encryptor</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/script.js"></script>
 </head>
-<body class="displayFlex">
+<body class="displayFlex directionColumn">
     <div class="container displayFlex directionColumn">
-        <h1>Olá Seja Bem vindo(a) ao Easy Encryptor</h1>
-        <p>Aqui Você pode criptografar ou descriptografar o texto que você quiser em base64 ou em Cifra de Cesar
-            Para isso basta selecionar a opção, digitar o seu texto na caixa “TEXTO INICIAL”, escolher se quer criptografar ou descriptografar e clicar em processar.Pronto! o seu resultado será exibido na caixa “TEXTO FINAL”</p>
+        <div class="divTextoTopo displayFlex directionColumn">
+            <h1>Seja Bem vindo(a) ao Easy Encryptor</h1>
+            <div class="textoDescritivo displayFlex directionColumn">
+                <p>
+                    Aqui você pode codificar ou decodificar o texto que você quiser em base64 ou em Cifra de Cesar.
+                </p>
+                <p> 
+                    Para isso, basta selecionar a opção, digitar o seu texto na caixa “TEXTO INICIAL”,
+                    escolher se quer codificar ou decodificar e clicar em processar. Pronto! O seu resultado será exibido na caixa “TEXTO FINAL”.
+                </p>
+            </div>
+        </div>
+        <form class="displayFlex directionColumn">
+            <div id='opcoesTopo' class="displayFlex" >
+                <div id="divSelect" class="displayFlex directionColumn">
+                    <select id="selectTipoCript">
+                        <option value="selecionar" disabled selected>Selecionar</option>
+                        <option value="1">Cifra de Cesar</option>
+                        <option value="2">Base64</option>
+                    </select>
+                    <div id="incremento" >
+                        <input  type="number" min="1" max="26">
+                        <label for="incremento">Informe o incremento</label>
+                    </div>
+                </div>
+                <div class="opcoesProcess displayFlex">
+                    <div class="opcao displayFlex">
+                        <input id='criptografar' type="radio" name="botão">
+                        <label for="criptografar" >codificar</label>
+                    </div>
 
+                    <div class="opcao displayFlex">
+                        <input id="descriptografar" type="radio" name="botão">
+                        <label for="descriptografar" >decodificar</label>
+                    </div>
+                </div>
+            </div>
+
+            <label id="labelTextoInicial" for="textoInicial">TEXTO INICIAL</label>
+            <textarea id="textoInicial"></textarea>
+
+            <div class="acoes displayFlex">
+                
+                <input id="button" type='button'></input>
+            </div>
+            <label id="labelTextoFinal" for="textoFinal">TEXTO FINAL</label>
+            <textarea id="textoFinal" readonly></textarea>
+        </form>
     </div>
-    <footer></footer>
+    <footer>Desenvolvido por ©2023  Daniel G. Lisboa</footer>
+    
+    <script id='script2' src="assets/js/script.js"></script>
+    
 </body>
 </html>
