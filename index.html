@@ -6,42 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Encryptor</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/IconeEasyEncryptor.png">
 </head>
 <body class="displayFlex directionColumn">
+    <!-- Corpo principal da página -->
     <div class="container displayFlex directionColumn">
+        <!-- Contéudo de texto no topo da página -->
         <div class="divTextoTopo displayFlex directionColumn">
-            <h1>Seja Bem vindo(a) ao Easy Encryptor</h1>
+            <!-- Logo da página -->
+            <img id="logo" src="assets/img/LogoEasyEncryptor.png" alt="Logo Easy Encryptor">
+            <h1>Seja Bem-vindo(a) ao Easy Encryptor</h1>
             <div class="textoDescritivo displayFlex directionColumn">
                 <p>
-                    Aqui você pode codificar ou decodificar o texto que você quiser em base64 ou em Cifra de Cesar.
+                    Aqui você pode codificar ou decodificar o texto que você quiser em base64 ou em Cifra de César.
                 </p>
                 <p> 
-                    Para isso, basta selecionar a opção, digitar o seu texto na caixa “TEXTO INICIAL”,
+                    Para isso, basta selecionar a opção de criptografia em "SELECIONAR", digitar o seu texto na caixa “TEXTO INICIAL”,
                     escolher se quer codificar ou decodificar e clicar em processar. Pronto! O seu resultado será exibido na caixa “TEXTO FINAL”.
                 </p>
             </div>
         </div>
+        <!-- Conteúdo principal da página -->
         <form class="displayFlex directionColumn">
             <div id='opcoesTopo' class="displayFlex" >
                 <div id="divSelect" class="displayFlex directionColumn">
                     <select id="selectTipoCript">
-                        <option value="selecionar" disabled selected>Selecionar</option>
+                        <option value="selecionar" disabled selected>SELECIONAR</option>
                         <option value="1">Cifra de Cesar</option>
                         <option value="2">Base64</option>
                     </select>
                     <div id="incremento" >
-                        <input  type="number" min="1" max="26">
-                        <label for="incremento">Informe o incremento</label>
+                        <input  type="number" min="1" max="25">
+                        <label for="incremento">incremento</label>
                     </div>
                 </div>
                 <div class="opcoesProcess displayFlex">
                     <div class="opcao displayFlex">
-                        <input id='criptografar' type="radio" name="botão">
+                        <input id='criptografar' type="radio">
                         <label for="criptografar" >codificar</label>
                     </div>
 
                     <div class="opcao displayFlex">
-                        <input id="descriptografar" type="radio" name="botão">
+                        <input id="descriptografar" type="radio">
                         <label for="descriptografar" >decodificar</label>
                     </div>
                 </div>
@@ -50,14 +56,15 @@
             <label id="labelTextoInicial" for="textoInicial">TEXTO INICIAL</label>
             <textarea id="textoInicial"></textarea>
 
-            <div class="acoes displayFlex">
-                
+            <div class="divButton displayFlex">
                 <input id="button" type='button'></input>
             </div>
+
             <label id="labelTextoFinal" for="textoFinal">TEXTO FINAL</label>
             <textarea id="textoFinal" readonly></textarea>
         </form>
     </div>
+    <!-- Rodapé -->
     <footer>Desenvolvido por ©2023  Daniel G. Lisboa</footer>
     
     <script id='script2' src="assets/js/script.js"></script>

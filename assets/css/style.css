@@ -1,50 +1,43 @@
-/* verde elementos #128b16 */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-
-/* ////////////// ELEMENTOS CRIADOS PELO JS //////////////////////// */
-
-#popUp{
+/* ////////////// ESTILIZAÇÂO DESKTOP ELEMENTOS CRIADOS PELO JS //////////////////////// */
+#popUp {
     margin-top: 20vh;
     position: absolute;
-    width: 400px;
-    height: 200px;
+    width: 40vw;
+    height: 40vh;
     background-color: #b3b3b3;
     border-radius: 2vh;
     border: solid 1vh rgb(182, 3, 3);
 }
 
-#divBtnClose{
+#divBtnClose {
     justify-content: center;
     align-items: center;
     height: 6vh;
-    
 }
 
-#divTextSpan{
+#divTextSpan {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    
+    height: 35vh;
 }
 
-#textSpan{
-    width: 15vw;
-    height: 10vh;
+#textSpan {
+    width: 30vw;
+    height: 20vh;
     text-align: center;
+    font-size: 4vh;
 }
 
-#btnClose{
+#btnClose {
     border-radius: 1vh;
     width: 3vw;
     height: 5vh;
 }
 
-
-/* /////////////////////// Corpo geral da pagina ///////////////////////// */
-
+/* /////////////////////// Corpo geral da página ///////////////////////// */
 * {
     margin: 0;
     padding: 0;
@@ -52,15 +45,15 @@
     box-sizing: border-box;
 }
 
-.displayFlex{
+.displayFlex {
     display: flex;
 }
 
-.directionColumn{
+.directionColumn {
     flex-direction: column;
 }
 
-body{
+body {
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -68,72 +61,56 @@ body{
     background-color: #272727;
 }
 
-.container{
+.container {
+    justify-content: space-between;
     align-items: center;
     border-radius: 2vh;
     width: 90vw;
-    height: 90vh;
+    height: 96vh;
     background-color: #000;
-}
-/* /////////////////////// Topo da Pagina ////////////////////////////  */
-
-#opcoesTopo{
-   align-items: flex-end;
-   padding-bottom: 2vh;
-   height: 12vh;
-   width: 45vw;
-   justify-content: space-between;
+    padding: 0.5rem;
 }
 
-#divSelect{
-    justify-content: end;
-    height: 10vh;
-    
-}
+/* /////////////////////// Topo da Página ////////////////////////////  */
+#logo{
+    margin-top: -1.5rem;
+    width: 5vw;
+    border-radius: 5vh;
 
-.divTextoTopo{
+}
+.divTextoTopo {
     justify-content: space-between;
     align-items: center;
     height: 20vh;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 3.5vh;
     color: #128b16;
 }
 
-.textoDescritivo{
+.textoDescritivo {
     width: 80vw;
     height: 13vh;
     text-align: center;
     font-size: 2.5vh;
     color: #128b16;
 }
-/* ////////////////////////////// Conteudo Principal //////////////////////////*/
-form{
-    
+
+/* ////////////////////////////// Conteúdo Principal //////////////////////////*/
+form {
     width: 45vw;
     height: 68vh;
     align-items: center;
 }
 
-#incremento{
-    display: none;
-    color: #128b16;
-   
+#divSelect {
+    justify-content: end;
+    height: 10vh;
 }
 
-#incremento input{
-    background-color: #494949;
-    border-radius: 1vh;
-    color: #92b493;
-    font-size: 2.5vh;
-}
-
-
-
-#selectTipoCript{
+#selectTipoCript {
     cursor: pointer;
     border-radius: 1vh;
     width: 12vw;
@@ -144,7 +121,41 @@ form{
     font-size: 2.5vh;
 }
 
-#textoInicial{
+#incremento {
+    display: none;
+    color: #128b16;
+}
+
+#incremento input {
+    background-color: #494949;
+    border-radius: 1vh;
+    color: #92b493;
+    font-size: 2.5vh;
+}
+
+#opcoesTopo {
+    align-items: flex-end;
+    padding-bottom: 2vh;
+    height: 12vh;
+    width: 45vw;
+    justify-content: space-between;
+}
+
+.opcoesProcess {
+    display: none;
+    width: 20vw;
+    justify-content: space-around;
+    color: #128b16;
+}
+
+.opcao {
+    
+    width: 20vw;
+    height: 5vh;
+    font-size: 3vh;
+}
+
+#textoInicial {
     margin-top: auto;
     width: 45vw;
     height: 25vh;
@@ -155,11 +166,12 @@ form{
     font-size: 3vh;
 }
 
-#labelTextoInicial, #labelTextoFinal{
+#labelTextoInicial,
+#labelTextoFinal {
     color: #128b16;
 }
 
-#textoFinal{
+#textoFinal {
     width: 45vw;
     height: 25vh;
     border-radius: 2vh;
@@ -172,26 +184,15 @@ form{
     resize: none;
 }
 
-.acoes{
+.divButton {
     justify-content: end;
     align-items: center;
     width: 40vw;
     height: 8vh;
 }
 
-.opcoesProcess{
-    width: 20vw;
-    justify-content: space-around;
-    color: #128b16;
-}
-
-.opcao{
-    width: 20vw;
-    height: 5vh;
-    font-size: 3vh;
-}
-
-#button{
+#button {
+    display: none;
     cursor: pointer;
     width: 10vw;
     height: 6vh;
@@ -200,4 +201,96 @@ form{
     background-color: #224129;
     color: #92b493;
     font-size: 2.5vh;
+}
+footer{
+    height: 1vh;
+    font-size: 1vh;
+}
+
+/* Exibição para dispositivos Mobile */
+@media screen and (max-width: 1024px) {
+/* ////////////// ESTILIZAÇÂO MOBILE ELEMENTOS CRIADOS PELO JS //////////////////////// */
+    #popUp {
+        width: 85vw;
+        height: 30vh;
+    }
+    
+    #textSpan {
+        width: 85vw;
+        font-size: 3vh;
+    }
+    
+    #btnClose {
+        width: 15vw;
+        height: 5vh;
+    }
+
+/* /////////////////////// Topo da Página Nobile ////////////////////////////  */
+#logo{
+    margin-top: -1rem;
+    width: 15vw;
+    border-radius: 5vh;
+
+}    
+
+    h1 {
+        font-size: 2.5vh;
+    }
+
+    .textoDescritivo {
+        width: 90vw;
+        height: 15vh;
+        text-align: center;
+        font-size: 1.5vh;
+        color: #128b16;
+    }
+
+    /* ////////////////////////////// Conteúdo Principal Mobile //////////////////////////*/
+    #selectTipoCript {
+        width: 30vw;
+        height: 5vh;
+        font-size: 1.5vh;
+    }
+    #incremento{
+        width: 35vw;
+    }
+
+    #incremento label {
+        font-size: 1.8vh;
+    }
+
+    #opcoesTopo {
+        width: 85vw;
+        height: 20vh;
+    }
+
+    .opcoesProcess {
+        width: 45vw;
+    }
+
+    .opcao {
+        width: 25vw;
+        align-items: center;
+        font-size: 1.6vh;
+    }
+
+    #textoInicial,
+    #textoFinal {
+        width: 85vw;
+    }
+    
+    .divButton {
+        width: 85vw;
+    }
+
+    #button {
+        cursor: pointer;
+        width: 25vw;
+        font-size: 2vh;
+    }
+    /* /////////////////// Rodapé Página Mobile */
+    footer{
+        font-size: 1.5vh;
+    }
+
 }
